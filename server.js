@@ -15,7 +15,7 @@ const port = process.env.PORT || 8000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: 'https://chat-app-frontend-ot7rtq6s7-shamsher-singh-gills-projects.vercel.app', 
     credentials: true
 }))
 
@@ -23,7 +23,7 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:5173',
+        origin: 'https://chat-app-frontend-ot7rtq6s7-shamsher-singh-gills-projects.vercel.app',
         methods: ['GET', 'POST'],
         credentials: true
     }
