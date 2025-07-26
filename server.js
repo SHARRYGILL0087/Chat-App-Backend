@@ -38,6 +38,10 @@ import userRoute from './routes/userRoute.js'
 import messageRoute from './routes/messageRoute.js'
 import contactRoute from './routes/contactRoute.js'
 
+app.get('/',(req,res)=>{
+    res.send('App is Running!')
+})
+
 
 
 app.use('/user', userRoute)
